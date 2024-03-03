@@ -44,3 +44,4 @@ bin/
 ### Mac OS ###
 .DS_Store
 /src/main/java/com/jira/api/resources/ConstantsData.java
+/src/main/java/com/jira/api/resources/AuthConstans.java

@@ -1,194 +1,209 @@
 package com.jira.api.mode;
 
 import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class CardDto extends Auth{
+public class CardDto extends Auth {
+    public CardDto() {
+    }
 
-	@JsonProperty("address")
-	private String address;
+    public CardDto(String name) {
+        this.name = name;
+    }
 
-	@JsonProperty("locationName")
-	private String locationName;
+    public CardDto(String idList, String name) {
+        this.idList = idList;
+        this.name = name;
+    }
 
-	@JsonProperty("idLabels")
-	private List<Object> idLabels;
 
-	@JsonProperty("idCardSource")
-	private String idCardSource;
 
-	@JsonProperty("start")
-	private String start;
+    @JsonProperty("address")
+    private String address;
 
-	@JsonProperty("dueComplete")
-	private boolean dueComplete;
 
-	@JsonProperty("coordinates")
-	private String coordinates;
+    @JsonProperty("locationName")
+    private String locationName;
 
-	@JsonProperty("urlSource")
-	private String urlSource;
+    @JsonProperty("idLabels")
+    private List<Object> idLabels;
 
-	@JsonProperty("fileSource")
-	private String fileSource;
+    @JsonProperty("idCardSource")
+    private String idCardSource;
 
-	@JsonProperty("idList")
-	private String idList;
+    @JsonProperty("start")
+    private String start;
 
-	@JsonProperty("mimeType")
-	private String mimeType;
+    @JsonProperty("dueComplete")
+    private boolean dueComplete;
 
-	@JsonProperty("idMembers")
-	private List<Object> idMembers;
+    @JsonProperty("coordinates")
+    private String coordinates;
 
-	@JsonProperty("pos")
-	private int pos;
+    @JsonProperty("urlSource")
+    private String urlSource;
 
-	@JsonProperty("due")
-	private String due;
+    @JsonProperty("fileSource")
+    private String fileSource;
 
-	@JsonProperty("name")
-	private String name;
+    @JsonProperty("idList")
+    private String idList;
 
-	@JsonProperty("keepFromSource")
-	private String keepFromSource;
+    @JsonProperty("mimeType")
+    private String mimeType;
 
-	@JsonProperty("desc")
-	private String desc;
+    @JsonProperty("idMembers")
+    private List<Object> idMembers;
 
-	public void setAddress(String address){
-		this.address = address;
-	}
+    @JsonProperty("pos")
+    private int pos;
 
-	public String getAddress(){
-		return address;
-	}
+    @JsonProperty("due")
+    private String due;
 
-	public void setLocationName(String locationName){
-		this.locationName = locationName;
-	}
+    @JsonProperty("name")
+    private String name;
 
-	public String getLocationName(){
-		return locationName;
-	}
+    @JsonProperty("keepFromSource")
+    private String keepFromSource;
 
-	public void setIdLabels(List<Object> idLabels){
-		this.idLabels = idLabels;
-	}
+    @JsonProperty("desc")
+    private String desc;
 
-	public List<Object> getIdLabels(){
-		return idLabels;
-	}
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
-	public void setIdCardSource(String idCardSource){
-		this.idCardSource = idCardSource;
-	}
+    public String getAddress() {
+        return address;
+    }
 
-	public String getIdCardSource(){
-		return idCardSource;
-	}
+    public void setLocationName(String locationName) {
+        this.locationName = locationName;
+    }
 
-	public void setStart(String start){
-		this.start = start;
-	}
+    public String getLocationName() {
+        return locationName;
+    }
 
-	public String getStart(){
-		return start;
-	}
+    public void setIdLabels(List<Object> idLabels) {
+        this.idLabels = idLabels;
+    }
 
-	public void setDueComplete(boolean dueComplete){
-		this.dueComplete = dueComplete;
-	}
+    public List<Object> getIdLabels() {
+        return idLabels;
+    }
 
-	public boolean isDueComplete(){
-		return dueComplete;
-	}
+    public void setIdCardSource(String idCardSource) {
+        this.idCardSource = idCardSource;
+    }
 
-	public void setCoordinates(String coordinates){
-		this.coordinates = coordinates;
-	}
+    public String getIdCardSource() {
+        return idCardSource;
+    }
 
-	public String getCoordinates(){
-		return coordinates;
-	}
+    public void setStart(String start) {
+        this.start = start;
+    }
 
-	public void setUrlSource(String urlSource){
-		this.urlSource = urlSource;
-	}
+    public String getStart() {
+        return start;
+    }
 
-	public String getUrlSource(){
-		return urlSource;
-	}
+    public void setDueComplete(boolean dueComplete) {
+        this.dueComplete = dueComplete;
+    }
 
-	public void setFileSource(String fileSource){
-		this.fileSource = fileSource;
-	}
+    public boolean isDueComplete() {
+        return dueComplete;
+    }
 
-	public String getFileSource(){
-		return fileSource;
-	}
+    public void setCoordinates(String coordinates) {
+        this.coordinates = coordinates;
+    }
 
-	public void setIdList(String idList){
-		this.idList = idList;
-	}
+    public String getCoordinates() {
+        return coordinates;
+    }
 
-	public String getIdList(){
-		return idList;
-	}
+    public void setUrlSource(String urlSource) {
+        this.urlSource = urlSource;
+    }
 
-	public void setMimeType(String mimeType){
-		this.mimeType = mimeType;
-	}
+    public String getUrlSource() {
+        return urlSource;
+    }
 
-	public String getMimeType(){
-		return mimeType;
-	}
+    public void setFileSource(String fileSource) {
+        this.fileSource = fileSource;
+    }
 
-	public void setIdMembers(List<Object> idMembers){
-		this.idMembers = idMembers;
-	}
+    public String getFileSource() {
+        return fileSource;
+    }
 
-	public List<Object> getIdMembers(){
-		return idMembers;
-	}
+    public void setIdList(String idList) {
+        this.idList = idList;
+    }
 
-	public void setPos(int pos){
-		this.pos = pos;
-	}
+    public String getIdList() {
+        return idList;
+    }
 
-	public int getPos(){
-		return pos;
-	}
+    public void setMimeType(String mimeType) {
+        this.mimeType = mimeType;
+    }
 
-	public void setDue(String due){
-		this.due = due;
-	}
+    public String getMimeType() {
+        return mimeType;
+    }
 
-	public String getDue(){
-		return due;
-	}
+    public void setIdMembers(List<Object> idMembers) {
+        this.idMembers = idMembers;
+    }
 
-	public void setName(String name){
-		this.name = name;
-	}
+    public List<Object> getIdMembers() {
+        return idMembers;
+    }
 
-	public String getName(){
-		return name;
-	}
+    public void setPos(int pos) {
+        this.pos = pos;
+    }
 
-	public void setKeepFromSource(String keepFromSource){
-		this.keepFromSource = keepFromSource;
-	}
+    public int getPos() {
+        return pos;
+    }
 
-	public String getKeepFromSource(){
-		return keepFromSource;
-	}
+    public void setDue(String due) {
+        this.due = due;
+    }
 
-	public void setDesc(String desc){
-		this.desc = desc;
-	}
+    public String getDue() {
+        return due;
+    }
 
-	public String getDesc(){
-		return desc;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setKeepFromSource(String keepFromSource) {
+        this.keepFromSource = keepFromSource;
+    }
+
+    public String getKeepFromSource() {
+        return keepFromSource;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
 }
