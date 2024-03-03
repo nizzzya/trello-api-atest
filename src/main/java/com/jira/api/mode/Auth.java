@@ -1,12 +1,12 @@
 package com.jira.api.mode;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.jira.api.resources.ConstantsData;
+import com.jira.api.resources.AuthConstans;
 
-public class Auth {
+public class Auth extends AuthConstans {
     @JsonProperty("key")
-    protected String key = ConstantsData.key;
+    protected String key = AuthConstans.key;
 
     @JsonProperty("token")
-    protected String token = ConstantsData.token;
+    protected String token = AuthConstans.token;
 }
