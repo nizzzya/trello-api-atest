@@ -25,13 +25,13 @@ public class CardController extends BaseController {
                 .get("{id}", targetCardId);
     }
 
-    public Response updateCardById(CardDto cardDto, int targetCardId) {
+    public Response updateCardById(CardDto cardDto, String targetCardId) {
         return cardApi()
                 .body(cardDto)
                 .put("{id}", targetCardId);
     }
 
-    public Response deleteCardById(int targetCardId) {
+    public Response deleteCardById(String targetCardId) {
         return cardApi()
                 .body(new CardDto())
                 .delete("{id}", targetCardId);
